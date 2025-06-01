@@ -1,205 +1,221 @@
-/* Couleurs générales */
 body {
-    background-color: #121212;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Navbar */
 .navbar-dark {
-    background-color: #121212 !important;
-    border-bottom: 1px solid #1db954;
+    background-color: midnightblue !important;
+    border-bottom: 2px solid mediumseagreen;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #1db954 !important;
+    color: lightgreen !important;
     transition: color 0.3s ease;
+    font-family: 'Arial', sans-serif;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
-    color: #1ed760 !important;
+    color: palegreen !important;
 }
 
-/* Dropdown menu */
 .dropdown-menu {
-    background-color: #181818;
-    border: 1px solid #1db954;
+    background-color: dimgray;
+    border: 1px solid mediumseagreen;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
 }
 
 .dropdown-menu .dropdown-item {
-    color: #1db954;
+    color: mediumseagreen;
+    font-family: 'Arial', sans-serif;
 }
 
 .dropdown-menu .dropdown-item:hover,
 .dropdown-menu .dropdown-item:focus {
-    background-color: #1ed760;
-    color: #121212;
+    background-color: palegreen;
+    color: black;
 }
 
-
-/* Boutons */
 .btn-success {
-    background-color: #1db954 !important;  /* Vert Sportify */
-    color: #fff !important;                /* Texte blanc pour contraste */
+    background-color: mediumseagreen !important;
+    color: white !important;
     font-weight: 600;
     border: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
+    padding: 10px 18px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px darkslategray;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Arial', sans-serif;
 }
 
 .btn-success:hover,
 .btn-success:focus {
-    background-color: #1ed760 !important;  /* Vert plus clair au survol */
-    color: #fff !important;
+    background-color: palegreen !important;
+    color: white !important;
+    transform: scale(1.05);
 }
 
-/* Ajout optionnel pour réduire le padding si ça te semble trop large */
 .btn-success.btn-sm {
-    padding: 4px 10px;
+    padding: 6px 14px;
     font-size: 0.85rem;
+    border-radius: 16px;
 }
-/* Si tu veux aussi corriger le bouton bleu */
+
 .btn-primary {
-    background-color: #007bff; /* ou ta couleur bleue */
-    color: #fff !important;    /* <-- force le texte blanc */
+    background-color: royalblue;
+    color: white !important;
     font-weight: 600;
     border: none;
+    border-radius: 20px;
+    padding: 10px 18px;
+    box-shadow: 2px 2px 6px slategray;
+    font-family: 'Arial', sans-serif;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #0056b3;
-    color: #fff !important;
+    background-color: navy;
+    color: white !important;
 }
 
-/* Boutons secondaires */
 .btn-outline-secondary {
-    color: #1db954;
-    border-color: #1db954;
+    color: mediumseagreen;
+    border-color: mediumseagreen;
+    border-radius: 20px;
+    padding: 10px 18px;
     transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
 }
 
 .btn-outline-secondary:hover,
 .btn-outline-secondary:focus {
-    background-color: #1db954;
-    color: #121212;
-    border-color: #1db954;
+    background-color: mediumseagreen;
+    color: black;
+    border-color: mediumseagreen;
 }
 
-/* Cartes (cards) */
 .card {
-    background-color: #1e1e1e;
-    color: white;
-    border: 1px solid #1db954;
+    background-color: lightgray;
+    color: black;
+    border: 2px solid mediumseagreen;
+    border-radius: 18px;
+    padding: 16px;
+    box-shadow: 3px 3px 8px gray;
     transition: box-shadow 0.3s ease;
+    font-family: 'Arial', sans-serif;
 }
 
 .card:hover {
-    box-shadow: 0 0 10px #1db954;
+    box-shadow: 5px 5px 12px darkgray;
 }
 
-/* Tables */
 .table {
-    color: #fff;
+    color: black;
+    font-family: 'Arial', sans-serif;
 }
 
 .table-dark {
-    background-color: #181818 !important;
-    color: #1db954 !important;
+    background-color: gainsboro !important;
+    color: mediumseagreen !important;
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
-    background-color: #222 !important;
+    background-color: whitesmoke !important;
 }
 
 .table-bordered {
-    border-color: #1db954 !important;
+    border-color: mediumseagreen !important;
 }
 
 .table-bordered th,
 .table-bordered td {
-    border-color: #1db954 !important;
+    border-color: mediumseagreen !important;
 }
 
-/* Formulaires */
 .form-control {
-    background-color: #222;
-    border: 1px solid #1db954;
-    color: #fff;
+    background-color: whitesmoke;
+    border: 2px solid mediumseagreen;
+    color: black;
+    border-radius: 10px;
+    padding: 8px 12px;
     transition: border-color 0.3s ease;
+    font-family: 'Arial', sans-serif;
 }
 
 .form-control:focus {
-    border-color: #1ed760;
-    box-shadow: 0 0 5px #1ed760;
-    background-color: #222;
-    color: #fff;
+    border-color: palegreen;
+    box-shadow: 0 0 6px palegreen;
+    background-color: white;
+    color: black;
 }
 
 ::placeholder {
-    color: #8ef58e; /* Plus lumineux et plus lisible */
-    opacity: 1;     /* s'assurer qu'il est bien visible */
+    color: lightgreen;
+    opacity: 1;
+    font-family: 'Arial', sans-serif;
 }
 
-
-/* Scrollbar personnalisée */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #1db954;
-    border-radius: 10px;
+    background-color: mediumseagreen;
+    border-radius: 20px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #121212;
+    background-color: lightgray;
 }
 
 /* Titres */
 h1, h2, h3, h4, h5, h6 {
-    color: #1db954;
+    color: mediumslateblue;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Liens */
 a, a:visited {
-    color: #1db954;
+    color: mediumseagreen;
     text-decoration: none;
+    font-family: 'Arial', sans-serif;
 }
 
 a:hover, a:focus {
-    color: #1ed760;
+    color: palegreen;
     text-decoration: underline;
 }
 
-/* Alertes */
 .alert {
-    border-radius: 4px;
+    border-radius: 12px;
+    padding: 12px 18px;
+    font-family: 'Arial', sans-serif;
 }
 
 .alert-info {
-    background-color: #1e1e1e;
-    border-color: #1db954;
-    color: #1db954;
+    background-color: lavender;
+    border-color: mediumseagreen;
+    color: darkslategray;
 }
 
 .alert-warning {
-    background-color: #3a3a3a;
-    border-color: #d4af37;
-    color: #d4af37;
+    background-color: cornsilk;
+    border-color: goldenrod;
+    color: goldenrod;
 }
 
 .alert-danger {
-    background-color: #3a1e1e;
-    border-color: #db4437;
-    color: #db4437;
+    background-color: mistyrose;
+    border-color: crimson;
+    color: firebrick;
 }
 
 /* Textes */
 .text-muted {
-    color: #999 !important;
+    color: darkgray !important;
+    font-family: 'Arial', sans-serif;
 }
